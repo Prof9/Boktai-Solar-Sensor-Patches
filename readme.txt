@@ -123,12 +123,12 @@ ______________________________________________________________________
 
 CLEAN ROMS:
   These patches were made for and tested on clean ROMs. While the
-  chances are slim, due to the nature of the patches (they have all
-  have an extension routine in free space) it's possible they might
-  overwrite, or be overwritten by other hacks or patches. The extra
-  routines have been placed in an empty region at the start of the ROM
-  in an effort to avoid this, but it's always possible. The Boktai 3
-  patch has been tested with the English fan translation, though.
+  chances are slim, due to the nature of the patches (they all have an
+  extension routine in free space) it's possible they might overwrite,
+  or be overwritten by other hacks or patches. The extra routines have
+  been placed in an empty region at the start of the ROM in an effort
+  to avoid this, but it's always possible. The Boktai 3 patch has been
+  tested with the English fan translation, though.
 
   Always make sure to use a verified source such as No-Intro to check
   whether you have a clean ROM. However, if you are not sure whether
