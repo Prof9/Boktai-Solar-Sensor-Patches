@@ -1,0 +1,48 @@
+This file contains the scene release info of all known clean Boktai ROM dumps.
+Verified with No-Intro.org Dat-O-Matic.
+
+Boktai 1 (J)
+CRC32: A09C0807
+Dir: BoKTAi_Totally_Unplayable_But_Enjoyable_Game_JAP_GBA-BATMAN
+File: bat-bok
+NOTE: There is no crack of Boktai 1 (J), so a cleaner patch is not needed.
+
+Boktai 1 (U)(Beta)
+CRC32: CF692572
+Dir: Boktai_The_Sun_Is_In_Your_Hand_USA_GBA-PARACOX
+File: pcx-boku
+
+Boktai 1 (U)
+CRC32: E715AC45
+Dir: Boktai_-_The_Sun_is_in_Your_Hand_GBA-IND
+File: ind-boku
+
+Boktai 1 (E)
+CRC32: 9686C36B
+Dir: Boktai_The_Sun_is_in_your_Hand_Multi5_EUR_GBA-ETERNiTY
+File: ety-boktai
+
+Boktai 2 (J)
+CRC32: 2804E589
+Dir: Zoku_Bokura_no_Taiyou_Taiyou_Shounen_Jango_JPN_GBA-Caravan
+File: cvn-zbttsj
+
+Boktai 2 (J)(Rev1)
+CRC32: 71E2CD01
+Dir: Zoku_Bokura_no_Taiyou_-_Taiyou_Shounen_Django_v1.1_JPN_GBA-iND
+File: ind-zbd1
+
+Boktai 2 (U)
+CRC: E1FFB2D1
+NOTE: No clean dump of Boktai 2 (U) exists on the net. Use the cleaner patch.
+
+Boktai 2 (E)
+CRC32: 748189B5
+Dir: Boktai_2_-_SolarBoy_Django_EUR_GBA-ETY
+File: ety-bsbd
+
+Boktai 3 (J)
+CRC32: AF453162
+Dir: Shin_Bokura_no_Taiyou_Gyakushuu_no_Sabata_JAP_GBA-sUppLeX
+File: sx-sbntg
+NOTE: Applying a translation patch will chance the CRC32.

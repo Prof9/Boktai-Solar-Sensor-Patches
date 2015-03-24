@@ -1,0 +1,8 @@
+# Exclude Lunar IPS executable.
+Lunar*IPS*.exe
+# Exclude ARMIPS executable.
+armips*.exe
+# Exclude ZIP files.
+*.zip
+# Exclude GBA ROMs.
+*.gba
