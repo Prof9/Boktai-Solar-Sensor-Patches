@@ -25,7 +25,7 @@ ______________________________________________________________________
 
 PATCHES
   This archive includes various patches for all Boktai games that have
-  been released as ROM dumps. They're divided into four categories:
+  been released as ROM dumps. They're divided into three categories:
 
   Clean:          Removes all solar sensor hacks or trainers made by
                   other people or groups, returning a patched ROM to
@@ -173,5 +173,5 @@ LICENSE:
   This project is licensed under the terms of the MIT license. See
   license.txt for more information.
 
-  Boktai, Bokura no Taiyou and Lunar Knights are © Konami 2003 - 2015.
+  Boktai, Bokura no Taiyou and Lunar Knights are Â© Konami 2003 - 2015.
   All rights belong to their respective owners.
