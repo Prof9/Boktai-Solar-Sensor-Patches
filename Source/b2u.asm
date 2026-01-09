@@ -4,32 +4,21 @@
 .org 0x080000D4 // sunlight changer
 .area 0xCC
 
-ldr	r0,=30057C8h
-ldr	r0,[r0]		// r0 = sunlight
-bl	8242050h	// r0 = amount of bars
+// set link port to GPIO mode if not yet set
+ldr	r0,=4000134h
+ldrh	r1,[r0]
+mov	r2,r1
+ldr	r3,=0FFF0h	// all bits except data
+and	r2,r3
+ldr	r3,=8000h	// GPIO mode, all inputs
+cmp	r2,r3
+beq	@@readio
+strh	r3,[r0]
+b	@@end		// skip GPIO read this cycle
 
-ldr	r1,=30044E0h
-ldrh	r2,[r1]		// r2 = BUTTON_HELD
-ldrh	r1,[r1,2h]	// r1 = BUTTON_DOWN
-mov	r3,4h
-tst	r2,r3		// if Select held
-beq	@@sunwrite
-
-@@righttest:
-mov	r3,10h
-tst	r1,r3
-beq	@@lefttest
-cmp	r0,0Ah
-bge	@@sunwrite
-add	r0,1h
-
-@@lefttest:
-mov	r3,20h
-tst	r1,r3
-beq	@@sunwrite
-cmp	r0,0h
-ble	@@sunwrite
-sub	r0,1h
+@@readio:
+lsl	r1,r1,1Ch
+lsr	r0,r1,1Ch	// keep data bits only
 
 @@sunwrite:
 add	r3,=dataarea
@@ -75,7 +64,8 @@ pop	r15
 .pool
 
 dataarea:
-dcb 0x00,0x03,0x09,0x12,0x1D,0x2A,0x3D,0x4D,0x62,0x7D,0x8C
+// GBA GPIO pins are pulled up, so no connection reads as 0xF; treat as no sunlight
+dcb 0x00,0x03,0x09,0x12,0x1D,0x2A,0x3D,0x4D,0x62,0x7D,0x8C,0x8C,0x8C,0x8C,0x8C,0x00
 
 .endarea
 
